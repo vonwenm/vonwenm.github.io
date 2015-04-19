@@ -4,17 +4,18 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
-
-
-
+# TEAM                       
+Your title: Marcelle von Wendland.                          
+Site: http://vonwenm.github.io/                        
+Twitter: bancstreet
+Twitter: http://twitter.com/bancstreet/
+                          
 # THANKS
-
-Name: Moritz »mo.« Sauer
-Role: Webdesigner of Theme
-Site: http://mo.phlow.de/
-Theme: http://phlow.github.io/feeling-responsive/
-Twitter: http://twitter.com/phlow
+Name: Marcelle von Wendland
+Role: Site Owner, Designer and Editor
+Site: http://vonwenm.github.io/
+Theme: https://github.com/vonwenm/vonwenm.github.io/
+Twitter: http://twitter.com/bancstreet/
 
 # TECHNOLOGY COLOPHON
 
