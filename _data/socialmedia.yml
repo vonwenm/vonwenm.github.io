@@ -1,3 +1,8 @@
+# - name: Linked-In
+#   url: https://uk.linkedin.com/in/marcellevonwendland
+#   class: icon-xing
+#   title: Linked-In Profile
+
 - name: YouTube
   url: http://www.youtube.com/bancstreet
   class: icon-youtube
@@ -9,35 +14,41 @@
   title: "Stay in Touch with Twitter"
 
 - name: Facebook
-  url: http://www.facebook.com/phlow.media
+  url: http://www.facebook.com/marcelle.vonwendland
   class: icon-facebook
-  title: "Lass uns Freunde sein!"
+  title: "Facebook - always in touch"
+  
+- name: LinkedIn
+  url: https://uk.linkedin.com/in/marcellevonwendland
+  class: icon-twitter
+  title: "Stay in Touch with linkedin"
 
 - name: Soundcloud
-  url: http://soundcloud.com/phlow
+  url: http://soundcloud.com/marcelle-von-wendland-1
   class: icon-soundcloud
-  title: "Sounds und Downloads und mehr"
+  title: "Smooth Sounds"
 
 - name: GitHub
-  url: http://github.com/phlow
+  url: http://github.com/vonwenm
   class: icon-github
-  title: Code und mehr...
+  title: More code from Marcelle...
 
-- name: Instagram
-  url: http://instagram.com/phlowmedia
-  class: icon-instagram
-  title: "Bilder und Impressionen mit und ohne Filter..."
 
 - name: Pinterest
-  url: http://www.pinterest.com/phlowmedia/
+  url: http://www.pinterest.com/trackmakersguru/
   class: icon-pinterest
   title: "Bilder, Fotos, Illustrationen, Grafiken sammeln..."
 
 - name: Mixcloud
-  url: http://www.mixcloud.com/phlow/
+  url: http://www.mixcloud.com/marcelle-von-wendland/
   class: icon-cloud
-  title: "Mixe, was sonst?"
+  title: "Smooth Music?"
 
+#- name: Instagram
+#  url: http://instagram.com/vonwenm
+#  class: icon-instagram
+#  title: "Instagrams from Marcelle"
+    
 # - name: Xing
 #   url: https://www.xing.com/profile/Moritzmo_Sauer
 #   class: icon-xing

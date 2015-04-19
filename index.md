@@ -5,9 +5,9 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title: "Feeling Responsive – A Jekyll Theme Based On Foundation"
+title: "Marcelle von Wendland"
 header:
-   image_fullwidth: "header_unsplash_14.jpg"
+   image_fullwidth: "header_unsplash_15.jpg"
 widget-1:
     title: "Blog & Portfolio"
     url: 'http://vonwenm.github.io/blog/'
