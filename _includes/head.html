@@ -1,78 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta charset="UTF-8">
-  {% if page.description %}
-	<meta name="description" content="{{page.description}}">
-  {% else %}
-  <meta name="description" content="{{site.description}}">
-  {% endif %}
-	<meta name="author" content="{{site.author}}">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/styles_feeling_responsive.css">
+	<script src="{{ site.url }}/assets/js/modernizr.min.js"></script>
+	
+  <script>
+    WebFontConfig = {
+      google: { families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ] }
+    };
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
 
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7cVolkhov' rel='stylesheet' type='text/css'>
+  </noscript>
 
-  {% if page.path contains '_posts' %}
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" value="summary">
-  <!-- Open Graph data -->
-  <meta property="og:title" content="{{page.title}}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{page.url}}" />
-  <meta property="og:description" content="{{page.description}}" />
-  {% endif %}
+  {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification}}" />{% endif %}
+	{% if site.bing_webmastertools_id %}<meta name="msvalidate.01" content="{{ site.bing_webmastertools_id }}" />{% endif %}
+	{% if page.meta_description %}<meta name="description" content="{{ page.meta_description | strip_html | escape }}"/>{% elsif page.teaser %}<meta name="description" content="{{ page.teaser | strip_html | escape }}"/>{% elsif site.description %}<meta name="description" content="{{ site.description | strip_html | escape }}"/>{% endif %}
+	
+	{% if site.google_author %}<link rel="author" href="{{ site.google_author }}"/>{% endif %}
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{site.url}}/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="{{site.url}}/assets/css/app.css">
-  <link rel="stylesheet" href="{{site.url}}/assets/css/github.css">
+	{% include favicon %}
 
-  <script src="/assets/js/all.js"></script>
-  <script src="/assets/js/app.js"></script>
-  <script src="/assets/js/jekyll-search.js"></script>
+	<!-- Facebook Optimization -->
+	<meta property="og:locale" content="{% if site.og_locale == nil %}en_EN{% else %}{{ site.og_locale }}{% endif %}" />
+	{% if site.og_type %}<meta property="og:type" content="website" />{% endif %}
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	{% if page.meta_description %}<meta property="og:description" content="{{ page.meta_description | strip_html | escape }}"/>{% elsif page.description %}<meta property="og:description" content="{{ page.description | strip_html | escape }}"/>{% elsif site.description %}<meta property="og:description" content="{{ site.description | strip_html | escape }}"/>{% endif %}
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	{% if site.title %}<meta property="og:site_name" content="{{ site.title }}" />{% endif %}
+	{% if page.image.thumb %}<meta property="og:image" content="{{ site.url }}/images/{{ page.image.thumb }}" />{% endif %}
 
+	{% if site.alexa_verify_id %}<meta name="alexaVerifyID" content="{{ site.alexa_verify_id }}" />{% endif %}
 
-  {% if page.title == "Home" %}
-  <!-- Add background-image -->
-    <script>
+	<!-- Search Engine Optimization -->
+	{% if page.noindex == true %}<meta name="robots" content="noindex">{% endif %}
 
-    var backgroundImage = [];
+	<link type="text/plain" rel="author" href="{{ site.url }}/humans.txt" />
 
-    backgroundImage[0]='bcg1.jpg';
-    backgroundImage[1]='bcg2.jpg';
-    backgroundImage[2]='bcg3.jpg';
-    backgroundImage[3]='bcg4.jpg';
-
-    var random=Math.floor(Math.random()*4);
-    document.write("<style>body {background: url("+"/assets/images/"+backgroundImage[random]+") no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color:#fff;background-color:#333;}</style>")
-    
-    </script>
-  <link rel="stylesheet" href="{{site.url}}/assets/css/bcg.css">
-  <link rel="stylesheet" href="{{site.url}}/assets/css/MetroJs.min.css">
-  {% endif %}
-
-  {% if page.bloghome == true %}
-  <style type="text/css">
-        a,a:hover,a:focus {
-          color:#DC572E;
-        }
-  </style>
-  {% endif %}
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{site.url}}/assets/images/favicon-128.png">
-  <link rel="shortcut icon" href="{{site.url}}/assets/images/favicon-16.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+	{% unless page.style == NULL %}
+	<style type="text/css">{{ page.style }}</style>
+	{% endunless %}
 </head>

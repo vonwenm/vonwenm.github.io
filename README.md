@@ -1,54 +1,50 @@
-# Jekyll Metro
 
-Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
+[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
 
-## Summary
+## A Responsive Jekyll Theme: *Feeling Responsive*
 
-Jekyll Metro is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal sites with blog. 
+Do you want to get to know *Feeling Responsive*? Than check it out first and have a look on its home at  <http://phlow.github.io/feeling-responsive/>.
 
-## Version 1.0 Development
+To get to know *Feeling Responsive* check out all the features explained in the [documentation][1].
 
-Head to [development branch](https://github.com/olakara/JekyllMetro/tree/development1.0) for bleeding edge. This is current development branch. The release is planned for end of April 2015.
-New features include:
-- Light box feature
-- Social media share widget
-- New colors
-
-This release will include lots of code clean up and optimizations in CSS, JS and HTML.
-
-## Features
-
-- Responsive Jekyll theme
-- Metro style Homepage
-  - Configurable tiles with different size
-  - Configurable colors for tiles
-  - Display of Latest and Recent articles as tiles
-- Pages for About Me, Resume with configurable color themes
-- Blog home page with listing of articles in pagination
-- Blog article page with configurable color themes
-- Easy integration with Google Analytics
-- Easy integration with Disqus for comments
-
-## Demo
-
-You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](http://blog-olakara.rhcloud.com)
-
-## Author
-
-**[Abdel Raoof Olakara](http://abdelraoof.com)**
+And what license is *Feeling Responsive* released under? [This one][2].
 
 
-## Contributors
 
-**Stilyan Kongalov**
-- <https://github.com/Stilyan-Kangalov>
+## Why use this theme?
 
-**Peter Zhu**
-- <https://github.com/ZhuFengdaaa>
+Feeling Responsive is heavily customizable.
+
+1. Language-Support :)
+2. Optimized for speed and it's responsive.
+3. Built on Foundation Framework.
+4. Six different Headers.
+5. Customizable navigation, footer,...
+
+**[More ›][3]**
 
 
-## License
 
-Open sourced under the [MIT license](LICENSE.md).
+## Video Tutorial
 
-<3
+Click the image to [watch the YouTube-Video-Tutorial][4].
+
+[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-tutorial-frontpage.jpg)](https://www.youtube.com/watch?v=rLS-BEvlEyY)
+
+
+
+
+
+
+
+
+ [1]: http://phlow.github.io/feeling-responsive/documentation/
+ [2]: https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
+ [3]: http://phlow.github.io/feeling-responsive/info/
+ [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
+ [5]: #
+ [6]: #
+ [7]: #
+ [8]: #
+ [9]: #
+ [10]: #
